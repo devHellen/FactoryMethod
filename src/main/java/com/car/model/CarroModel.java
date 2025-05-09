@@ -1,5 +1,6 @@
 package com.car.model;
 
+import com.car.enuns.CarroTipo;
 import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.Getter;
@@ -15,7 +16,7 @@ public class CarroModel {
     private String nome;
     private int numeroPortas;
     private int capacidadeCombustivel;
-    private String tipo;
+    private CarroTipo tipo;
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -29,8 +30,7 @@ public class CarroModel {
         this.capacidadeCombustivel = capacidadeCombustivel;
     }
 
-    public void setTipo(String tipo) {
+    public void setTipo(CarroTipo tipo) {
         this.tipo = tipo;
     }
-
 }

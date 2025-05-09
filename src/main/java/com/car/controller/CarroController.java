@@ -1,5 +1,6 @@
 package com.car.controller;
 
+import com.car.enuns.CarroTipo;
 import com.car.model.CarroModel;
 //import com.car.repository.CarroRepository;
 import com.car.service.CarroService;
@@ -21,12 +22,8 @@ public class CarroController {
 
     @PostMapping("/inserir-carro/{type}")
     public ResponseEntity<CarroModel> criarCarro(@PathVariable("type") String type) throws ClassNotFoundException {
-        return new ResponseEntity<CarroModel>(this.service.criarCarro(type), HttpStatus.CREATED);
-    }
-
-    @GetMapping("/listar-carros")
-    public ResponseEntity<List<CarroModel>> listarCarros() {
-        List<CarroModel> carros = this.service.listarTodosCarros();
-        return new ResponseEntity<>(carros, HttpStatus.OK);
+        return new ResponseEntity<CarroModel>(this.service.criarCarro(CarroTipo.valueOf(type)), HttpStatus.CREATED);
     }
 }
+
+
