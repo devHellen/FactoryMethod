@@ -1,8 +1,8 @@
-package com.car.implementacoes;
+package com.car.abstractFactory.implementacoes;
 
-import com.car.enuns.CarroTipo;
-import com.car.factory.CarroFactory;
-import com.car.model.CarroModel;
+import com.car.abstractFactory.enuns.CarroTipo;
+import com.car.abstractFactory.factory.CarroFactory;
+import com.car.abstractFactory.model.CarroModel;
 
 public class SedanFactory implements CarroFactory {
     @Override

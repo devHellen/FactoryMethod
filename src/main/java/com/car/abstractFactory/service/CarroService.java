@@ -1,19 +1,16 @@
-package com.car.service;
+package com.car.abstractFactory.service;
 
-import com.car.enuns.CarroTipo;
-import com.car.factory.CarroFactory;
-import com.car.implementacoes.HatchFactory;
-import com.car.implementacoes.SedanFactory;
-import com.car.implementacoes.SuvFactory;
-import com.car.model.CarroModel;
+import com.car.abstractFactory.enuns.CarroTipo;
+import com.car.abstractFactory.factory.CarroFactory;
+import com.car.abstractFactory.implementacoes.HatchFactory;
+import com.car.abstractFactory.implementacoes.SedanFactory;
+import com.car.abstractFactory.implementacoes.SuvFactory;
+import com.car.abstractFactory.model.CarroModel;
 //import com.car.repository.CarroRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 
 @Service
 public class CarroService {

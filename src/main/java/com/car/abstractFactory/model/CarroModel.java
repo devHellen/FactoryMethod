@@ -1,6 +1,6 @@
-package com.car.model;
+package com.car.abstractFactory.model;
 
-import com.car.enuns.CarroTipo;
+import com.car.abstractFactory.enuns.CarroTipo;
 import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.Getter;
